@@ -1,5 +1,18 @@
 # AngularJS #
 
+## Table of Contents ##
+
+- [AngularJS](#angularjs)
+  * [What is AngularJs](#what-is-angularjs)
+    + [AngularJS Extends HTML](#angularjs-extends-html)
+      - [Example](#example)
+    + [AngularJS Directives](#angularjs-directives)
+      - [Example](#example-1)
+    + [AngularJS Expressions](#angularjs-expressions)
+      - [Example](#example-2)
+    + [AngularJS Applications](#angularjs-applications)
+      - [Example](#example-3)
+
 ## What is AngularJs ##
 
 - AngularJS is a JavaScript framework. It can be added to an HTML page with a <script> tag.
