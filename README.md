@@ -56,8 +56,55 @@
 </div>
 
 ```
+</details>
+
 ### AngularJS Expressions ###
 
 - AngularJS expressions are written inside double braces: {{ expression }}.
 - AngularJS expressions bind AngularJS data to HTML the same way as the ng-bind directive.
 - AngularJS will "output" data exactly where the expression is written:
+#### Example ####
+<details>
+<summary><h6>(chick here)</h6></summary>
+
+```
+<div ng-app="">
+  <p>My first expression: {{ 5 + 5 }}</p>
+  <p>Name: <input type="text" ng-model="name"></p>
+  <p>{{name}}</p>
+</div>
+
+```
+</details>
+
+### AngularJS Applications ###
+
+- AngularJS modules define AngularJS applications.
+- AngularJS controllers control AngularJS applications.
+- The ng-app directive defines the application, the ng-controller directive defines the controller.
+
+#### Example ####
+
+<details>
+<summary><h6>(chick here)</h6></summary>
+
+```
+
+<div ng-app="myApp" ng-controller="myCtrl">
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  $scope.firstName= "John";
+  $scope.lastName= "Doe";
+});
+</script>
+
+```
+</details>
